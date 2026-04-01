@@ -1,0 +1,6 @@
+#include "../include/resources.h"
+
+/* Embed data files as binary resources */
+IDR_USER_AGENTS  DATAFILE  "..\\data\\user_agents.txt"
+IDR_BLOCKLIST    DATAFILE  "..\\data\\blocklist.txt"
+IDR_WIKI_FREQ    DATAFILE  "..\\data\\wiki_freq.txt"

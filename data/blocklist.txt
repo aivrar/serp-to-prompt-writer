@@ -1,0 +1,109 @@
+# Domains to filter out of SERP analysis
+# These are non-competitive results that marketers don't need to study
+# One domain per line, lines starting with # are comments
+
+# Encyclopedias & Reference
+wikipedia.org
+wikimedia.org
+wiktionary.org
+britannica.com
+dictionary.com
+merriam-webster.com
+thesaurus.com
+
+# Major Marketplaces
+amazon.com
+amazon.co.uk
+amazon.de
+amazon.fr
+amazon.ca
+ebay.com
+etsy.com
+walmart.com
+target.com
+alibaba.com
+aliexpress.com
+bestbuy.com
+homedepot.com
+lowes.com
+costco.com
+wayfair.com
+
+# Social Media
+facebook.com
+twitter.com
+x.com
+instagram.com
+tiktok.com
+snapchat.com
+linkedin.com
+pinterest.com
+reddit.com
+tumblr.com
+threads.net
+discord.gg
+discord.com
+bsky.app
+bsky.social
+mastodon.social
+nextdoor.com
+
+# Video Platforms
+youtube.com
+vimeo.com
+dailymotion.com
+twitch.tv
+
+# Q&A / Forums (usually not competitive business pages)
+quora.com
+stackexchange.com
+stackoverflow.com
+
+# Major News
+cnn.com
+bbc.com
+bbc.co.uk
+nytimes.com
+washingtonpost.com
+reuters.com
+apnews.com
+theguardian.com
+foxnews.com
+nbcnews.com
+abcnews.go.com
+usatoday.com
+huffpost.com
+
+# Government
+# Match any .gov domain in code, not here
+
+# Google Properties
+google.com
+google.co.uk
+support.google.com
+cloud.google.com
+maps.google.com
+maps.app.goo.gl
+play.google.com
+books.google.com
+
+# Microsoft Properties
+microsoft.com
+bing.com
+office.com
+live.com
+
+# Apple
+apple.com
+apps.apple.com
+
+# Other Giants
+adobe.com
+oracle.com
+ibm.com
+salesforce.com
+
+# Hosting / Platform
+godaddy.com
+shopify.com
+myshopify.com

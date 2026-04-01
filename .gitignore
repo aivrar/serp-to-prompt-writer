@@ -1,0 +1,35 @@
+# Build output
+build/
+*.exe
+*.dll
+*.lib
+*.exp
+*.obj
+*.o
+*.pdb
+*.ilk
+
+# IDE
+.vs/
+.vscode/
+*.vcxproj.user
+CMakeSettings.json
+
+# Runtime data (auto-created by app)
+data/
+output/
+models/
+debug.log
+debug.log.old
+.env
+
+# vcpkg
+vcpkg_installed/
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temp screenshots in build dir
+build/Release/Capture*.PNG

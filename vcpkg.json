@@ -1,0 +1,14 @@
+{
+    "name": "serp-analyzer",
+    "version": "1.0.0",
+    "description": "SERP Analyzer & Prompt Builder",
+    "builtin-baseline": "b472291f295551b7127359ea38fdd2ca092f6f1b",
+    "dependencies": [
+        "curl",
+        {
+            "name": "sqlite3",
+            "features": ["fts5"]
+        },
+        "gumbo"
+    ]
+}
