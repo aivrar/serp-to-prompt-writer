@@ -79,7 +79,7 @@ Manage the domain blocklist, download ONNX NLP models, purge the database, and m
 
 ## Architecture
 
-~8,000 lines of C11 targeting Windows 10+ (Win32 API). Built with CMake and vcpkg.
+~18,000 lines of C11 (about 17,800 in `src/` and `include/`, excluding bundled libraries) targeting Windows 10+ (Win32 API). Built with CMake and vcpkg.
 
 ### Pipeline
 
@@ -111,19 +111,19 @@ Keyword Input
 
 | Module | Lines | Purpose |
 |--------|-------|---------|
-| `tui.c` | ~8,000 | Win32 GUI — 5 tabs, owner-draw controls, dark theme |
-| `nlp.c` | ~3,600 | TF-IDF engine, n-gram extraction, intent classification, junk filtering |
-| `engine.c` | ~2,300 | Pipeline orchestrator, batch processing, background threads |
-| `database.c` | ~1,700 | SQLite persistence — sessions, URLs, headings, settings |
-| `prompt.c` | ~1,600 | 4 prompt templates, markdown/JSON export, gap reports |
-| `onnx_nlp.c` | ~1,600 | ONNX Runtime — NER (bert-base-NER), embeddings (all-MiniLM-L6-v2) |
-| `nli.c` | ~900 | BPE tokenizer + distilbart-mnli zero-shot classification |
-| `scraper.c` | ~950 | Gumbo HTML parser, content extraction, link/heading parsing |
-| `js_render.c` | ~800 | Chrome DevTools Protocol via WinHTTP WebSocket |
+| `tui.c` | ~5,100 | Win32 GUI — 5 tabs, owner-draw controls, dark theme |
+| `nlp.c` | ~2,350 | TF-IDF engine, n-gram extraction, intent classification, junk filtering |
+| `engine.c` | ~1,650 | Pipeline orchestrator, batch processing, background threads |
+| `database.c` | ~1,050 | SQLite persistence — sessions, URLs, headings, settings |
+| `prompt.c` | ~800 | 4 prompt templates, markdown/JSON export, gap reports |
+| `onnx_nlp.c` | ~1,100 | ONNX Runtime — NER (bert-base-NER), embeddings (all-MiniLM-L6-v2) |
+| `nli.c` | ~620 | BPE tokenizer + distilbart-mnli zero-shot classification |
+| `scraper.c` | ~570 | Gumbo HTML parser, content extraction, link/heading parsing |
+| `js_render.c` | ~640 | Chrome DevTools Protocol via WinHTTP WebSocket |
 | `serper.c` | ~200 | Serper API client with pagination |
-| `config.c` | ~210 | .env parser, multi-key rotation |
-| `threadpool.c` | ~200 | Win32 condition-variable thread pool |
-| `resmon.c` | ~350 | CPU/RAM/GPU sampling, NVML dynamic loading |
+| `config.c` | ~205 | .env parser, multi-key rotation |
+| `threadpool.c` | ~195 | Win32 condition-variable thread pool |
+| `resmon.c` | ~225 | CPU/RAM/GPU sampling, NVML dynamic loading |
 
 ### Dependencies
 
@@ -196,7 +196,7 @@ onnxruntime_providers_tensorrt.dll   (711 KB)
 
 1. Download the latest release
 2. Run `serp_to_prompt_writer.exe` — it creates all directories and a template `.env` on first launch
-3. Go to **Settings > Connection** and add your [Serper API key](https://serper.dev) (free tier: 100 searches/day)
+3. Go to **Settings > Connection** and add your [Serper API key](https://serper.dev) (new accounts get 2,500 free queries; one-time credits, no card required)
 4. Optionally click **Download NLP Models** on the Settings > Data & Tools tab for entity extraction and semantic scoring
 5. Go to the **Search** tab, type a keyword, and click **Go**
 6. View the generated prompt on the **Analysis** tab — click **Copy** to paste into your AI writing tool

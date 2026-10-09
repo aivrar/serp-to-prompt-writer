@@ -88,7 +88,7 @@ Click the **Settings** tab to configure the application before your first analys
 
 ### 3.1 Adding Serper API Keys
 
-You need at least one Serper API key to search Google. The free tier gives you **100 searches per day**.
+You need at least one Serper API key to search Google. New accounts get **2,500 free queries** (one-time starter credits, no card required).
 
 **Getting a key:**
 1. Go to [serper.dev](https://serper.dev) and create a free account
