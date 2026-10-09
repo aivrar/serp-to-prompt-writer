@@ -235,7 +235,7 @@ Development assisted by [Claude Code](https://claude.ai/code) (Anthropic).
 
 ## License
 
-This project is provided as-is for personal and commercial use. See individual dependency licenses for third-party components.
+Released under the [MIT License](LICENSE). Third-party libraries and models keep their own licenses (see Credits above).
 
 ---
 
