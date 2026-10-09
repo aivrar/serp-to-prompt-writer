@@ -146,6 +146,8 @@ Downloaded on first use via the Settings tab:
 | [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | HuggingFace | Semantic similarity embeddings |
 | [distilbart-mnli](https://huggingface.co/valhalla/distilbart-mnli-12-3) | HuggingFace | Zero-shot content classification |
 
+The ONNX export of distilbart-mnli that the app downloads is also hosted at [aivrar-code/distilbart-mnli-12-3-onnx](https://huggingface.co/aivrar-code/distilbart-mnli-12-3-onnx) on Hugging Face (model card included).
+
 ---
 
 ## Building from Source

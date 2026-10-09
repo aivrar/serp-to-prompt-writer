@@ -8,7 +8,7 @@
  * Uses distilbart-mnli (BART architecture, GPT-2 BPE tokenizer).
  *
  * Input:  premise + hypothesis → tokenized as <s>premise</s></s>hypothesis</s>
- * Output: logits[3] → [entailment, neutral, contradiction]
+ * Output: logits[3] → [contradiction, neutral, entailment]  (entailment = index 2)
  *
  * For content type: run 8 hypotheses per query, pick highest entailment.
  */
